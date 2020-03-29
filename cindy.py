@@ -1,6 +1,6 @@
 class REGISTRO():
 
-  def __init__(self,nombre, apellido, pais, genero, edad, dia, mes, año):
+  def __init__(self):
    self.nombre = ""
    self.apellido = ""
    self.pais=0
