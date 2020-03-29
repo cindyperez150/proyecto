@@ -413,30 +413,30 @@ while (opcion != 3):
 
             if (dato.edad <= edadMin_covid):
                 edadMin_covid = dato.edad
-                nomb_min_covid = dato.nombre
-                apellido_min_covid = dato.apellido
+                nomb_mincovid = dato.nombre
+                apellido_mincovid = dato.apellido
             if (dato.edad > edadMax_covid):
                 edadMax_covid = dato.edad
-                nomb_max_covid = dato.nombre
-                apellido_max_covid = dato.apellido
+                nomb_maxcovid = dato.nombre
+                apellido_maxcovid = dato.apellido
             else:
-                if (dato.edad <= edadMin_descartado):
-                    edadMin_descartado = dato.edad
-                    nomb_min_descartado = dato.nombre
-                    apellido_min_descartado = dato.apellido
-            if (dato.edad > edadMax_descartado):
-                edadMax_descartado = dato.edad
-                nomb_max_descartado = dato.nombre
-                apellido_max_descartado = dato.apellido
+                if (dato.edad <= edadMindescartado):
+                    edadMindescartado = dato.edad
+                    nombmin_descartado = dato.nombre
+                    apellidomin_descartado = dato.apellido
+            if (dato.edad > edadMaxdescartado):
+                edadMaxdescartado = dato.edad
+                nombmax_descartado = dato.nombre
+                apellidomax_descartado = dato.apellido
         if (Paciente == "2"):
-            if (dato.edad <= edadMin_fallecidos):
-                edadMin_fallecidos = dato.edad
-                nomb_min_fallecido = dato.nombre
-                apellido_max_fallecido = dato.apellido
-            if (dato.edad > edadMax_fallecidos):
-                edadMax_fallecidos = dato.edad
-                nomb_max_fallecido = dato.nombre
-                apellido_max_fallecido = dato.apellido
+            if (dato.edad <= edadMinmuertos):
+                edadMinmuertos = dato.edad
+                nombminmuerto = dato.nombre
+                apellidomaxmuerto = dato.apellido
+            if (dato.edad > edadMaxmuertos):
+                edadMaxmuertos = dato.edad
+                nombmaxmuerto = dato.nombre
+                apellidomaxmuerto = dato.apellido
     if (opcion == 2):
         while (opcion3 != 3):
             print("\n\t\t-MENU-\n")
@@ -449,20 +449,20 @@ while (opcion != 3):
                 print("CONTAGIADOS: ", confirmados)
                 print("FEMENINO: ", confirmadosFemenino)
                 print("MASCULINO: ", confirmadosMasculino)
-                print("\nRECUPERADOS: ", recuperados)  # Se muestra informacion general de casos, por genero
-                print("FEMENINO: ", recuperadosF)  # Y por paises
-                print("MASCULINO: ", recuperadosM)
-                print("==================================================\n")
-                print("\nMUERTOS: ", fallecidos)
-                print("FEMENINO: ", fallecidosF)
-                print("MASCULINO: ", fallecidosM)
-                print("==================================================\n")
+                print("\nRECUPERADOS: ", recuperados)  
+                print("FEMENINO: ", recuperadosFemenino)  
+                print("MASCULINO: ", recuperadosMasculino)
+              
+                print("\nMUERTOS: ", muertos)
+                print("FEMENINO: ", fallecidosFemenino)
+                print("MASCULINO: ", fallecidosMasculino)
+               
                 print("\nDESCARTADOS: ", descartados)
-                print("FEMENINO: ", descartadosF)
-                print("MASCULINO: ", descartadosM)
-                print("==================================================\n")
+                print("FEMENINO: ", descartadosFemenino)
+                print("MASCULINO: ", descartadosMasculino)
+             
                 print("\nCASOS POR PAISES:\n")
-                print("==================================================\n")
+               
 
                 print("\nCHINA:\n")
                 print("CONTAGIADOS: ", confirmados_china)
@@ -517,24 +517,24 @@ while (opcion != 3):
             if (opcion3 == 2):
 
                 print("\nCONTAGIADO DE MENOR EDAD: \n")
-                print("NOMBRE: ", nomb_min_covid, apellido_min_covid)
+                print("NOMBRE: ", nomb_mincovid, apellido_mincovid)
                 print("EDAD: ", edadMin_covid)
                 print("\nCONTAGIADO DE MAYOR EDAD: \n")
-                print("NOMBRE: ", nomb_max_covid, apellido_max_covid)
+                print("NOMBRE: ", nomb_maxcovid, apellido_maxcovid)
                 print("EDAD: ", edadMax_covid)
 
                 print("\nDESCARTADO DE MENOR EDAD: \n")
-                print("NOMBRE: ", nomb_min_descartado, apellido_min_descartado)
-                print("EDAD: ", edadMin_descartado)
+                print("NOMBRE: ", nombmin_descartado, apellidomin_descartado)
+                print("EDAD: ", edadMindescartado)
 
                 print("\nDESCARTADO DE MAYOR EDAD: \n")
-                print("NOMBRE: ", nomb_max_descartado, apellido_max_descartado)
-                print("EDAD: ", edadMax_descartado)
+                print("NOMBRE: ", nombmax_descartado, apellidomax_descartado)
+                print("EDAD: ", edadMaxdescartado)
 
                 print("\nMUERTO DE MENOR EDAD: \n")
-                print("\nNOMBRE: ", nomb_min_fallecido, apellido_min_fallecido)
-                print("\nEDAD: ", edadMin_fallecidos)
+                print("\nNOMBRE: ", nombminmuerto, apellidominmuerto)
+                print("\nEDAD: ", edadMinmuertos)
 
                 print("\nMUERTO DE MAYOR EDAD: \n")
-                print("\nNOMBRE: ", nomb_max_fallecido, apellido_max_fallecido)
-                print("\nEDAD: ", edadMax_fallecidos)
+                print("\nNOMBRE: ", nombmaxmuerto, apellidomaxmuerto)
+                print("\nEDAD: ", edadMaxmuertos)
