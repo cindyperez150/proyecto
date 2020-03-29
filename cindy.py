@@ -1,14 +1,14 @@
 class REGISTRO():
 
   def __init__(self,nombre, apellido, pais, genero, edad, dia, mes, año):
-    self.nombre = ""
-    self.apellido = ""
-    self.pais=0
-    self.genero= ""
-    self.edad=0
-      self.dia=0
-      self.mes=0
-      self.año=0
+   self.nombre = ""
+   self.apellido = ""
+   self.pais=0
+   self.genero= ""
+   self.edad=0
+   self.dia=0
+   self.mes=0
+   self.año=0
 fallecidos_china = 0
 descartados_china = 0
 confirmados_usa = 0
